@@ -11,8 +11,8 @@ header{
 
 .logo {
    color: black;
-   width: 200px;
-   height: 200px;
+   width: 120px;
+   height: 120px;
    margin-left: 80px;
    margin-right: 80px;
 }
@@ -32,7 +32,7 @@ nav li{
 }
 header nav a {
     color: black;
-    font-size: 20px;
+    font-size: 15px;
     margin: 50px;
 }
 a {
@@ -43,8 +43,7 @@ ul{
 }
 nav,nav ul.nav li {
     display: flex;
-    align-items: center;
-    min-height: 100vh;    
+    align-items: center;    
 }
 .animations {
     position: relative;
@@ -70,12 +69,26 @@ nav,nav ul.nav li {
 .right{
     right: 0;
     top: 20%;
+    animation-name: moveLeft;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+
+    animation-iteration-count: 5;
 }
 @keyframes moveRight{
     from{
-        left:20%;
+        left:60%;
     }
     to{
+        right: 20%;
+    }
+}
+@keyframes moveLeft{
+    from{
         right: 60%;
+    }
+    to{
+        left:20% ;
     }
 }
