@@ -48,13 +48,14 @@ nav,nav ul.nav li {
 }
 .animations {
     position: relative;
-    padding: 100px 0;
+    padding: 300px 0;
+    background-color: yellowgreen;
 }
 .left,
 .right{
     width: 120px;
     height: 120px;
-    background-color:white;
+    background-color:yellowgreen;
     position: absolute;
 }
 .left{
