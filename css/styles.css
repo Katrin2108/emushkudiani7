@@ -6,7 +6,7 @@
 header{
     display: flex;
     background-color:rgb(255, 38, 0);
-    padding: 30px 0 100px;
+    padding: 30px 0 80px;
 }
 
 .logo {
@@ -30,7 +30,6 @@ nav li{
     transition-duration: 2s;
     transition-timing-function:linear;
 }
-
 header nav a {
     color: black;
     font-size: 20px;
@@ -44,5 +43,39 @@ ul{
 }
 nav,nav ul.nav li {
     display: flex;
-    align-items: center;    
+    align-items: center;
+    min-height: 100vh;    
+}
+.animations {
+    position: relative;
+    padding: 100px 0;
+}
+.left,
+.right{
+    width: 120px;
+    height: 120px;
+    background-color:white;
+    position: absolute;
+}
+.left{
+    top: 50%;
+    left: 0;
+    animation-name:moveRight;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+
+    animation-iteration-count: 5;
+}
+.right{
+    right: 0;
+    top: 20%;
+}
+@keyframes moveRight{
+    from{
+        left:20%;
+    }
+    to{
+        right: 60%;
+    }
 }
